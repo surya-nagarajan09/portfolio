@@ -43,8 +43,7 @@ const useStyles = makeStyles({
       maxWidth:350,
       borderRadius:"3%",
       margin:"5px",
-      backgroundColor:"#161F6D",
-      color:"white"
+   
     },
     media: {
       height:200,
@@ -67,7 +66,7 @@ const FullStack=()=>{
             <CardMedia className={classes.media} image={x.img}  title="projects"/>
             <CardContent>
               <Typography gutterBottom variant="h5" >{x.name}</Typography>
-              <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{x.about}</Typography>
+              <Typography variant="body2" color="textPrimary" component="p" >{x.about}</Typography>
               <Typography style={{margin:"5px",padding:"5px",border:"5px",borderColor:"secondary"}}variant="h5"><DiHtml5/><DiReact/><DiNodejs/><DiMongodb/><DiHeroku/></Typography>  
             </CardContent>
           </CardActionArea>

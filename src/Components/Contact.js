@@ -93,9 +93,11 @@ export default function FormPropsTextFields() {
               </Card>
       </div>
        </Grid>
-       <Grid xs={12} sm={4} >
+       <Grid xs={12} sm={4}>
+
        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
+      
+        <Grid item xs={12} sm={4} md={3}>
         <Card style={{color:"white"}}>
                 <CardContent>
                 <form className={classes.root} noValidate autoComplete="off"> 
@@ -103,7 +105,6 @@ export default function FormPropsTextFields() {
         <TextField type='email' id="standard-helperText" variant="outlined"label="Mail"onChange={(e)=>setForm({...form,mail: e.target.value})}   placeholder="enter mail" helperText={alertMessage.mail}/>
         <TextareaAutosize  style={{width:"35ch",marginLeft:"25px"}} rowsMax={10}  aria-label="maximum height" onChange={(e)=>setForm({...form,message: e.target.value})} placeholder="comments//" rowsMin={5}/>
        </form>
-      
        <ReactiveButton buttonState={state} onClick={onClickHandler}
          color={'blue'}
          idleText={<GiClick/>}
@@ -120,12 +121,15 @@ export default function FormPropsTextFields() {
          disabled={((form.message==="")||(form.mail==="")||(form.message===""))}
  />
                 </CardContent>
-              </Card>
-       
+              </Card> 
         </Grid>
-        <Grid xs={12}>
+        <Grid xs={12} sm={4}>
+          <div>
+          <iframe src="https://lottiefiles.com/iframe/31662-e-mail-02" title="mail" style={{width:"260px",height:"260px",marginTop:"80px",marginLeft:"100px",dipslay:"flex",justifyContent:"center",overflow:"hidden",scrolling:"no",frameBorder:"0",allowTransparency:"true",seamless:"seamless",marginHeight:"0",marginWidth:"0"}}></iframe>
+         </div>
 
-        </Grid>
+        </Grid>   
+       
         </Grid>
      
 

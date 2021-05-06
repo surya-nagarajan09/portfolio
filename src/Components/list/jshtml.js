@@ -52,9 +52,7 @@ const useStyles = makeStyles({
     root: {
       maxWidth:300,
       borderRadius:"3%",
-      margin:"10px",
-      backgroundColor:"#161F6D",
-      color:"white"
+      margin:"10px" 
     },
     media: {
       height: 200,
@@ -78,7 +76,7 @@ const Jshtml=()=>{
             <CardMedia className={classes.media} image={x.img}title="project"/>
             <CardContent>
               <Typography gutterBottom variant="h5" >{x.name}</Typography>
-              <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{x.about}</Typography>
+              <Typography variant="body2" color="textPrimary" component="p">{x.about}</Typography>
               <Typography style={{margin:"5px",padding:"5px",border:"5px",borderColor:"primary"}}variant="h5"><DiHtml5/><DiCss3/><IoLogoJavascript/></Typography>  
             </CardContent>
           </CardActionArea>

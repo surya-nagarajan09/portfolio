@@ -32,7 +32,7 @@ const useStyles = makeStyles({
     borderRadius:"3%",
     marginTop:"30px",
     marginRight:"15px",
-    backgroundColor:"#00ABE1",
+    backgroundColor:"#161F6D",
     color:"white"
   },
   media: {
@@ -52,7 +52,7 @@ const About=()=>{
       <div >  
        <Grid xs={12} >
                 <div  style={{diplay:"flex",justifyContent:"center",textAlign:"center"}}   >
-              <Card style={{backgroundColor:"#161F6D",color:"white"}}>
+              <Card style={{backgroundColor:"#00ABE1",color:"white"}}>
                 <CardContent>
                   <Typography variant="h3">EDUCATION</Typography>
                 </CardContent>
