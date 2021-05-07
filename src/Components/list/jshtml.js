@@ -52,7 +52,9 @@ const useStyles = makeStyles({
     root: {
       maxWidth:300,
       borderRadius:"3%",
-      margin:"10px" 
+      margin:"10px",
+      backgroundColor:"#195190FF",
+      color:"white"
     },
     media: {
       height: 200,
@@ -69,15 +71,14 @@ const Jshtml=()=>{
     const classes = useStyles();
     return(
         <div >
-  
-      <div className={classes.dis} >{projects.map((x)=>(
+         <div className={classes.dis} >{projects.map((x)=>(
           <Card className={classes.root}>
           <CardActionArea>
             <CardMedia className={classes.media} image={x.img}title="project"/>
             <CardContent>
               <Typography gutterBottom variant="h5" >{x.name}</Typography>
-              <Typography variant="body2" color="textPrimary" component="p">{x.about}</Typography>
-              <Typography style={{margin:"5px",padding:"5px",border:"5px",borderColor:"primary"}}variant="h5"><DiHtml5/><DiCss3/><IoLogoJavascript/></Typography>  
+              <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{x.about}</Typography>
+              <Typography style={{margin:"5px",padding:"5px",border:"5px",borderColor:"primary",color:"white"}} variant="h5"><DiHtml5/><DiCss3/><IoLogoJavascript/></Typography>  
             </CardContent>
           </CardActionArea>
           <CardActions>

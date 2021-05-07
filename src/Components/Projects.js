@@ -33,21 +33,21 @@ const Projets=()=>{
        setTimeout(() => {
           setState('success');
           setProject(<FullStack/>)
-       },400);
+       },600);
     }
     const onClickHandlerjs = () => {
       setState1('loading');
       setTimeout(() => {
          setState1('success');
          setProject(<Jshtml/>)
-      },400);
+      },600);
    }
    const onClickHandlernode = () => {
     setState2('loading');
     setTimeout(() => {
        setState2('success');
        setProject(<Backend/>)
-    },400);
+    },600);
  }
  
     return(
@@ -55,18 +55,18 @@ const Projets=()=>{
             <Grid container spacing={1}>
                 <Grid xs={12} >
                 <div  style={{diplay:"flex",justifyContent:"center",textAlign:"center"}}   >
-                 <Card style={{backgroundColor:"#161F6D",color:"white"}}>
+                 <Card style={{backgroundColor:"#195190FF",color:"#A2A2A1FF"}}>
                 <CardContent>
-                  <Typography variant="h3">PROJECTS   </Typography>
+                  <Typography variant="h3">PROJECTS </Typography>
                 </CardContent>
               </Card>
               </div>         
                 </Grid>
                 <Grid xs={12}>
                    <div style={{display:'flex',justifyContent:'center',margin:"10px"}}>    
-                   <ReactiveButton buttonState={state} onClick={onClickHandlerFull} color={"primary"} idleText={"FullStack"} loadingText={<React.Fragment><FaHammer/></React.Fragment>} successText={<React.Fragment><DiCodeBadge/></React.Fragment>}size={"large"} shadow={true}/>
-                   <ReactiveButton buttonState={state1} onClick={onClickHandlerjs} color={"primary"} idleText={"HTML,CSS,JS"} loadingText={<React.Fragment><FaHammer/></React.Fragment>} successText={<React.Fragment><DiCodeBadge/></React.Fragment>}size={"large"}shadow={true}/>
-                   <ReactiveButton buttonState={state2} onClick={onClickHandlernode} color={"primary"} idleText={"Node JS"} loadingText={<React.Fragment><FaHammer/></React.Fragment>} successText={<React.Fragment><DiCodeBadge/></React.Fragment>}size={"large"}shadow={true}/>               
+                   <ReactiveButton buttonState={state} onClick={onClickHandlerFull} color={"dark"} idleText={"FullStack"} loadingText={<React.Fragment><FaHammer/></React.Fragment>} successText={<React.Fragment><DiCodeBadge/></React.Fragment>}size={"large"} shadow={true} messageDuration={600}/>
+                   <ReactiveButton buttonState={state1} onClick={onClickHandlerjs} color={"dark"} idleText={"HTML,CSS,JS"} loadingText={<React.Fragment><FaHammer/></React.Fragment>} successText={<React.Fragment><DiCodeBadge/></React.Fragment>}size={"large"}shadow={true}messageDuration={600}/>
+                   <ReactiveButton buttonState={state2} onClick={onClickHandlernode} color={"dark"} idleText={"Node JS"} loadingText={<React.Fragment><FaHammer/></React.Fragment>} successText={<React.Fragment><DiCodeBadge/></React.Fragment>}size={"large"}shadow={true}messageDuration={600}/>               
                   </div>
                 </Grid>
                 <Grid xs={12}>

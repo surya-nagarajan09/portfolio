@@ -42,7 +42,9 @@ const useStyles = makeStyles({
     root: {
       maxWidth:350,
       borderRadius:"3%",
-      margin:"5px",
+      margin:"7px",
+      backgroundColor:"#195190FF",
+      color:"White"
    
     },
     media: {
@@ -52,7 +54,7 @@ const useStyles = makeStyles({
         display:"flex",
         flexWrap:"wrap",
         justifyContent:"center",
-        color:"white",
+        color:"White",
     }
   });
 
@@ -66,12 +68,12 @@ const FullStack=()=>{
             <CardMedia className={classes.media} image={x.img}  title="projects"/>
             <CardContent>
               <Typography gutterBottom variant="h5" >{x.name}</Typography>
-              <Typography variant="body2" color="textPrimary" component="p" >{x.about}</Typography>
+              <Typography variant="body1" color="textPrimary" component="p" style={{color:"White"}}>{x.about}</Typography>
               <Typography style={{margin:"5px",padding:"5px",border:"5px",borderColor:"secondary"}}variant="h5"><DiHtml5/><DiReact/><DiNodejs/><DiMongodb/><DiHeroku/></Typography>  
             </CardContent>
           </CardActionArea>
           <CardActions>
-          <AwesomeButton size="large" style={{backgroundColor:"#89ABE3FF"}} href={x.git} target="_blank"><Typography variant="h5" ><FaGithubAlt/></Typography></AwesomeButton> 
+          <AwesomeButton size="large"   href={x.git} target="_blank"><Typography variant="h5" ><FaGithubAlt/></Typography></AwesomeButton> 
           <AwesomeButton size="large"  href={x.dep} target="_blank"><Typography variant="h5" ><GrDeploy/></Typography></AwesomeButton>
           </CardActions>
 

@@ -28,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
 const gridStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    textColor:"white"
+    textColor:"white",
+    
   },
   paper: {
     padding: theme.spacing(2),
@@ -86,49 +87,51 @@ export default function FormPropsTextFields() {
      <Grid container spacing={5}>
      <Grid xs={12} >
      <div  style={{diplay:"flex",justifyContent:"center",textAlign:"center"}}   >
-              <Card style={{backgroundColor:"#161F6D",color:"white"}}>
+              <Card  style={{backgroundColor:"#195190FF",color:"#A2A2A1FF"}}>
                 <CardContent>
                   <Typography variant="h3">CONTACT ME</Typography>
                 </CardContent>
               </Card>
       </div>
        </Grid>
-       <Grid xs={12} sm={4}>
-
+       <Grid xs={12} sm={2}>
        </Grid>
-      
+       <Grid xs={12} sm={5}>
+          <div>
+            <Card style={{marginTop:"20px",height:"400px"}}>
+            <img src='https://i.postimg.cc/YSB4WRvV/5887-removebg-preview.png' alt="mail"></img>
+            </Card>
+            {/* <img src="https://maxst.icons8.com/vue-static/landings/animated-icons/icons/mailbox/mailbox.json"></img> */}
+         </div>
+        </Grid>   
         <Grid item xs={12} sm={4} md={3}>
-        <Card style={{color:"white"}}>
-                <CardContent>
-                <form className={classes.root} noValidate autoComplete="off"> 
-        <TextField  type="text"color="primary" id="standard-helperText" variant="outlined"label="Name" onChange={(e)=>setForm({...form,name: e.target.value})} placeholder="enter name" helperText={alertMessage.name}/>
-        <TextField type='email' id="standard-helperText" variant="outlined"label="Mail"onChange={(e)=>setForm({...form,mail: e.target.value})}   placeholder="enter mail" helperText={alertMessage.mail}/>
+        <Card style={{color:"white",width:"400px",height:"400px",marginLeft:"20px"}}>
+        <CardContent>
+        <form className={classes.root} noValidate autoComplete="off"> 
+        <TextField  type="text"color="secondary" id="filled-helperText" label="Name" onChange={(e)=>setForm({...form,name: e.target.value})} placeholder="enter name" helperText={alertMessage.name}/>
+        <TextField type='email' id="filled-helperText" color="secondary"label="Mail"onChange={(e)=>setForm({...form,mail: e.target.value})}   placeholder="enter mail" helperText={alertMessage.mail}/>
         <TextareaAutosize  style={{width:"35ch",marginLeft:"25px"}} rowsMax={10}  aria-label="maximum height" onChange={(e)=>setForm({...form,message: e.target.value})} placeholder="comments//" rowsMin={5}/>
        </form>
-       <ReactiveButton buttonState={state} onClick={onClickHandler}
-         color={'blue'}
+        <ReactiveButton buttonState={state} onClick={onClickHandler}
+         color={'violet'}
          idleText={<GiClick/>}
          loadingText={<VscLoading/>}
          successText={<RiThumbUpFill/>}
-         errorText={'Error'}
+        
          type={'button'}
          className={'class1 class2'}
-         style={{ borderRadius: '5px',marginLeft:"80px" }}
+         style={{ borderRadius: '1px',marginLeft:"80px" }}
          shadow={true}
          rounded={false}
          size={'normal'}
          animation={true}
          disabled={((form.message==="")||(form.mail==="")||(form.message===""))}
- />
-                </CardContent>
+      
+/>
+          </CardContent>
               </Card> 
         </Grid>
-        <Grid xs={12} sm={4}>
-          <div>
-          <iframe src="https://lottiefiles.com/iframe/31662-e-mail-02" title="mail" style={{width:"260px",height:"260px",marginTop:"80px",marginLeft:"100px",dipslay:"flex",justifyContent:"center",overflow:"hidden",scrolling:"no",frameBorder:"0",allowTransparency:"true",seamless:"seamless",marginHeight:"0",marginWidth:"0"}}></iframe>
-         </div>
-
-        </Grid>   
+       
        
         </Grid>
      

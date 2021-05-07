@@ -12,7 +12,7 @@ const cardStyles = makeStyles({
         justifyContent: 'center',
         textAlign: 'center',
         margin:"15px",
-        backgroundColor:"#00ABE1"
+        backgroundColor:"#A2A2A1FF"
     }
   });
 
@@ -26,9 +26,8 @@ const useStyles = makeStyles((theme) => ({
 const gridStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-      
-      color:"#195190FF",
-      textColor:"white",
+      color:"#A2A2A1FF",
+      textColor:"#195190FF",
     },
   }));
 
@@ -57,9 +56,9 @@ const Skills=()=> {
           <Grid container spacing={0}>
             <Grid xs={12}>
               <div  style={{diplay:"flex",justifyContent:"center",textAlign:"center"}}   >
-              <Card style={{backgroundColor:"#161F6D",color:"white"}}>
+              <Card style={{backgroundColor:"#195190FF",color:"#A2A2A1FF"}}>
                 <CardContent>
-                  <Typography variant="h3">SKILLS</Typography>
+                  <Typography variant="h2">SKILLS</Typography>
                 </CardContent>
               </Card>
               </div>
@@ -70,8 +69,8 @@ const Skills=()=> {
              <Card className={card.root} variant="outlined">
              <CardContent>
                 <div className={classes.root}>
-                   <Typography variant="h5"style={{backgroundColor:"#161F6D",color:"white"}} >HTML- 80%</Typography>
-                    <LinearProgress  variant="determinate" color="secondary" value={progress1}></LinearProgress> 
+                   <Typography variant="h5"style={{backgroundColor:"#A2A2A1FF",color:"#195190FF"}} >HTML- 80%</Typography>
+                    <LinearProgress  variant="determinate" color="primary" value={progress1}></LinearProgress> 
                 </div>
              </CardContent>
             </Card>
@@ -80,8 +79,8 @@ const Skills=()=> {
               <Card className={card.root} variant="outlined">
              <CardContent>
                 <div className={classes.root}>
-                   <Typography variant="h5" style={{backgroundColor:"#161F6D",color:"white"}}>CSS- 70%</Typography>
-                    <LinearProgress color="secondary" variant="determinate" value={progress2}></LinearProgress> 
+                   <Typography variant="h5" style={{backgroundColor:"#A2A2A1FF",color:"#195190FF"}}>CSS- 70%</Typography>
+                    <LinearProgress color="primary" variant="determinate" value={progress2}></LinearProgress> 
                 </div>
              </CardContent>
             </Card>
@@ -92,8 +91,8 @@ const Skills=()=> {
              <Card className={card.root} variant="outlined">
              <CardContent>
                 <div className={classes.root}>
-                   <Typography variant="h5" style={{backgroundColor:"#161F6D",color:"white"}}>Java Script-80%</Typography>
-                    <LinearProgress color="secondary" variant="determinate" value={progress3}></LinearProgress> 
+                   <Typography variant="h5" style={{backgroundColor:"#A2A2A1FF",color:"#195190FF"}}>Java Script-80%</Typography>
+                    <LinearProgress color="primary" variant="determinate" value={progress3}></LinearProgress> 
                 </div>
              </CardContent>
             </Card>
@@ -102,8 +101,8 @@ const Skills=()=> {
               <Card className={card.root} variant="outlined">
              <CardContent>
                 <div className={classes.root}>
-                   <Typography  variant="h5" style={{backgroundColor:"#161F6D",color:"white"}}>React Js -70%</Typography>
-                    <LinearProgress color="secondary"  variant="determinate" value={progress4}></LinearProgress> 
+                   <Typography  variant="h5" style={{backgroundColor:"#A2A2A1FF",color:"#195190FF"}}>React Js -70%</Typography>
+                    <LinearProgress color="primary"  variant="determinate" value={progress4}></LinearProgress> 
                 </div>
              </CardContent>
             </Card>
@@ -114,8 +113,8 @@ const Skills=()=> {
              <Card className={card.root} variant="outlined">
              <CardContent>
                 <div className={classes.root}>
-                   <Typography variant="h5" style={{backgroundColor:"#161F6D",color:"white"}}>Node JS -65%</Typography>
-                    <LinearProgress color="secondary"  variant="determinate" value={progress5}></LinearProgress> 
+                   <Typography variant="h5" style={{backgroundColor:"#A2A2A1FF",color:"#195190FF"}}>Node JS -65%</Typography>
+                    <LinearProgress color="primary"  variant="determinate" value={progress5}></LinearProgress> 
                 </div>
              </CardContent>
             </Card>
@@ -124,8 +123,8 @@ const Skills=()=> {
               <Card className={card.root} variant="outlined">
              <CardContent>
                 <div className={classes.root}>
-                   <Typography variant="h5" style={{backgroundColor:"#161F6D",color:"white"}}>MongoDb -80%</Typography>
-                    <LinearProgress color="secondary" variant="determinate" value={progress6}></LinearProgress> 
+                   <Typography variant="h5" style={{backgroundColor:"#A2A2A1FF",color:"#195190FF"}}>MongoDb -80%</Typography>
+                    <LinearProgress color="primary" variant="determinate" value={progress6}></LinearProgress> 
                 </div>
              </CardContent>
             </Card>

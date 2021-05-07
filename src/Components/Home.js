@@ -11,6 +11,7 @@ import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 
 
+
 const StyledBadge = withStyles((theme) => ({
     badge: {
       backgroundColor: '#44b700',
@@ -44,7 +45,7 @@ const gridStyles = makeStyles((theme) => ({
     flexGrow: 1,
     display:"flex",
     flexWrap:"wrap",
-    color:"#161F6D",
+    color:"black",
   },
 }));
 
@@ -60,18 +61,16 @@ export default function CenteredGrid() {
         <Grid item xs={12} sm={6} md={3}> 
         <div>
       <StyledBadge  overlap="circle" anchorOrigin={{ vertical: 'bottom', horizontal: 'right', }} variant="dot" >
-        <Avatar style={{height: '250px',width:"250px",marginTop:"120px",marginLeft:"50px"}} alt="" src="https://i.postimg.cc/tCWDM9zY/IMG-20200727-WA0006.jpg" />
+        <Avatar style={{height: '250px',width:"250px",marginTop:"120px",marginLeft:"60px"}} alt="" src="https://i.postimg.cc/tCWDM9zY/IMG-20200727-WA0006.jpg" />
       </StyledBadge>    
     </div>     
         </Grid>
         <Grid item xs={12} sm={6} md={3}> 
-        
-         <div style={{marginTop:"120px",justifyContent:"center",display:"block",padding:"10px",border:"50px",marginLeft:"50px" }}> 
-          <Typography variant="h2">Hi!</Typography>
-        <Typography variant="h3">I am Surya N</Typography>
+         <div style={{marginTop:"120px",justifyContent:"center",display:"block",padding:"10px",border:"50px",marginLeft:"50px",backgroundImage:"url(https://i.postimg.cc/wMS5KFZ5/watercolour-4117017.png)",backgroundSize:"cover",backgroundPosition:"center",opcatiy:"0.9"}}>   
+         <Typography variant="h2">Hi!</Typography>
+         <Typography variant="h3">I am Surya N</Typography>
         <Typography variant="h4">MERN Stack Developer</Typography> 
-        </div>       
-      
+        </div>     
         <div style={{display:'flex',justifyContent: 'center',width:'100%'}}>
         <Button href="https://www.guvi.in/suryanagarajan01" target="_blank"><Typography variant="h4"><img src="https://i.postimg.cc/RFX8GXmn/20210506-131238.png  " width="50" height="50"alt="guvi"></img></Typography></Button>   
         <Button href="https://github.com/surya-nagrajan" target="_blank"><Typography variant="h4"><AiFillGithub/></Typography></Button>   
@@ -79,10 +78,7 @@ export default function CenteredGrid() {
         </div>
         <div>
         </div>
-        </Grid>
-        <Grid xs={2}>
-        </Grid> 
-       
+        </Grid>     
       </Grid>
     </div>
   );

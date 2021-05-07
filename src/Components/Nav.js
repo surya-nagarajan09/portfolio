@@ -59,11 +59,11 @@ const Nav=()=> {
       <div>
       <Toolbar>
       <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
-      <BottomNavigationAction label="Home" value="Home" style={{color:"#161F6D"}}icon={<HomeIcon/>} onClick={()=>setPage(<Home/>)} />
-      <BottomNavigationAction label="Info" value="Info" style={{color:"#161F6D"}}icon={<InfoIcon/>} onClick={()=>setPage(<About/>)} />
-      <BottomNavigationAction label="Skills" value="Skills"style={{color:"#161F6D"}} icon={<CodeIcon/>} onClick={()=>setPage(<Skills/>)} />
-      <BottomNavigationAction label="Projects" value="Projects" style={{color:"#161F6D"}}icon={<GitHubIcon/>} onClick={()=>setPage(<Projects/>)} />
-      <BottomNavigationAction label="Contact Me" value="Contact Me"style={{color:"#161F6D"}} icon={<ContactMailIcon/>} onClick={()=>setPage(<Contact/>)} />
+      <BottomNavigationAction label="Home" value="Home" style={{color:"#195190FF"}}icon={<HomeIcon/>} onClick={()=>setPage(<Home/>)} />
+      <BottomNavigationAction label="Info" value="Info" style={{color:"#195190FF"}}icon={<InfoIcon/>} onClick={()=>setPage(<About/>)} />
+      <BottomNavigationAction label="Skills" value="Skills"style={{color:"#195190FF"}} icon={<CodeIcon/>} onClick={()=>setPage(<Skills/>)} />
+      <BottomNavigationAction label="Projects" value="Projects" style={{color:"#195190FF"}}icon={<GitHubIcon/>} onClick={()=>setPage(<Projects/>)} />
+      <BottomNavigationAction label="Contact Me" value="Contact Me"style={{color:"#195190FF"}} icon={<ContactMailIcon/>} onClick={()=>setPage(<Contact/>)} />
       </BottomNavigation>
       </Toolbar>
       </div>

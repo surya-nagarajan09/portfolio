@@ -1,15 +1,19 @@
-import React from "react";
+import React from 'react';
 import Nav from "./Components/Nav";
-  
 
 
 
-function App() {
+
+
+const App=()=> {
+
   return (
     <div>
-    
-      <Nav/>    
+    <Nav/>
+
     </div>
+    
+    
   );
 }
 
