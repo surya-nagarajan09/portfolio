@@ -30,9 +30,8 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     display:"block",
-    width:"80% ",
+    width:"100% ",
     justifyContent:'center',
-    marginLeft:"50px"
   },
 }));
 const About=()=>{
@@ -49,57 +48,43 @@ const About=()=>{
                </Card>
                  </div>
         </Grid> 
-      <Grid  container direction="row" justify="center" alignItems="baseline">
-       
-      <Grid xs={2}>
-        </Grid>
-        <Grid item xs={8} >
-          <motion.div whileHover={{ scale:1.2}} >
-            <Card className={classes.root} style={{backgroundColor:'#195190FF',color:"white",marginTop:"2px"}} >
+      <Grid  container direction="row" justify="center" alignItems="baseline"> 
+            <Grid item xs={12} >
+          <motion.div whileHover={{ scale:1.01}}  whileTap={{ scale: 0.9 }}>
+            <Card className={classes.root} style={{color:"#195190FF",marginTop:"2px"}} >
                   <CardContent>
                  <Typography gutterBottom variant="h4" >{info[0].degree}</Typography>
                    <Typography gutterBottom variant="h5" >{info[0].area}</Typography>
                    <Typography gutterBottom variant="h5" >{info[0].time}</Typography>
-                   <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{info[0].dis}</Typography>   
+                   <Typography variant="body2" color="textPrimary" component="p" style={{color:"#195190FF"}}>{info[0].dis}</Typography>   
                   </CardContent>      
              </Card>
              </motion.div>    
         </Grid>
-        <Grid xs={2}>
-        </Grid>
-        <Grid xs={2} sm={2}>
-        </Grid>
-        <Grid item xs={8} sm={8} >
-          <motion.div whileHover={{ scale:1.2}} >
-            <Card className={classes.root} style={{backgroundColor:'#195190FF',color:"white",marginTop:"2px"}} >
+        <Grid item xs={12}  >
+          <motion.div whileHover={{ scale:1.01}} whileTap={{ scale: 0.9 }} >
+            <Card className={classes.root} style={{color:"#195190FF",marginTop:"2px"}} >
                   <CardContent>
                  <Typography gutterBottom variant="h4" >{info[1].degree}</Typography>
                    <Typography gutterBottom variant="h5" >{info[1].area}</Typography>
                    <Typography gutterBottom variant="h5" >{info[1].time}</Typography>
-                   <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{info[1].dis}</Typography>   
+                   <Typography variant="body2" color="textPrimary" component="p" style={{color:"#195190FF"}}>{info[1].dis}</Typography>   
                   </CardContent>      
              </Card>
              </motion.div>    
         </Grid>
-        <Grid xs={2} sm={2}>
-        </Grid>
-        <Grid xs={2}>
-        </Grid>
-        <Grid item xs={8} >
-          <motion.div whileHover={{ scale:1.2}} >
-            <Card className={classes.root} style={{backgroundColor:'#195190FF',color:"white",marginTop:"2px"}} >
+        <Grid item xs={12} >
+          <motion.div whileHover={{ scale:1.01}}  whileTap={{ scale: 0.9 }}>
+            <Card className={classes.root} style={{color:"#195190FF",marginTop:"2px"}} >
                   <CardContent>
                  <Typography gutterBottom variant="h4" >{info[2].degree}</Typography>
                    <Typography gutterBottom variant="h5" >{info[2].area}</Typography>
                    <Typography gutterBottom variant="h5" >{info[2].time}</Typography>
-                   <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{info[2].dis}</Typography>   
+                   <Typography variant="body2" color="textPrimary" component="p" style={{color:"#195190FF"}}>{info[2].dis}</Typography>   
                   </CardContent>      
              </Card>
              </motion.div>    
         </Grid>
-        <Grid xs={2}>
-        </Grid>
-       
       </Grid>
       </Grid>
 

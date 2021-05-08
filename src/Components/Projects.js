@@ -53,14 +53,14 @@ const Projets=()=>{
     return(
         <div className={grid.root}>
             <Grid container spacing={1}>
-                <Grid xs={12} >
+               <Grid xs={12} >
                 <div  style={{diplay:"flex",justifyContent:"center",textAlign:"center"}}   >
                  <Card style={{backgroundColor:"#195190FF",color:"#A2A2A1FF"}}>
                 <CardContent>
                   <Typography variant="h3">PROJECTS </Typography>
                 </CardContent>
-              </Card>
-              </div>         
+               </Card>
+                 </div>         
                 </Grid>
                 <Grid xs={12}>
                    <div style={{display:'flex',justifyContent:'center',margin:"10px"}}>    
