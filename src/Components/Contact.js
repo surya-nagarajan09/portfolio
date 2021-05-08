@@ -100,10 +100,10 @@ export default function FormPropsTextFields() {
        </Grid>
        <Grid xs={12} sm={5}>
           <div>
-             <Card style={{marginTop:"20px",height:"400px",width:"500px",justifyContent:"center"}}>  
+             <Card style={{marginTop:"20px",height:"400px",width:"500px",justifyContent:"center",backgroundColor:"lightblue"}}>  
              <motion.div whileHover={{ scale:1.2}} >
                <CardContent>
-               <img src='https://i.postimg.cc/63VsCrYy/removal-ai-tmp-60963a52928ae.png' alt="mail" style={{marginLeft:"100px"}}></img>
+               <img src='https://i.postimg.cc/63VsCrYy/removal-ai-tmp-60963a52928ae.png' alt="mail" style={{marginLeft:"100px",backgroundColor:"lightblue"}}></img>
                </CardContent>
             </motion.div>
             </Card>
@@ -121,15 +121,13 @@ export default function FormPropsTextFields() {
         <TextareaAutosize  style={{width:"35ch",marginLeft:"25px"}} rowsMax={10}  aria-label="maximum height" onChange={(e)=>setForm({...form,message: e.target.value})} placeholder="comments//" rowsMin={5}/>
        </form>
         <ReactiveButton buttonState={state} onClick={onClickHandler}
-         color={'teal'}
+         color={'secondary'}
          idleText={<GiClick/>}
          loadingText={<VscLoading/>}
          successText={<RiThumbUpFill/>}
-        
          type={'button'}
          className={'class1 class2'}
          style={{ borderRadius: '1px',marginLeft:"80px" }}
-         outline={true}
          shadow={true}
          rounded={false}
          size={'normal'}

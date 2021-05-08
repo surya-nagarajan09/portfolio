@@ -29,6 +29,10 @@ const info=[{
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    display:"block",
+    width:"80% ",
+    justifyContent:'center',
+    marginLeft:"50px"
   },
 }));
 const About=()=>{
@@ -37,7 +41,7 @@ const About=()=>{
     <div>
       <Grid container spacing={1}>
       <Grid item xs={12}>
-      <div  style={{diplay:"flex",justifyContent:"center",textAlign:"center"}}   >
+      <div  style={{diplay:"flex",justifyContent:"space-evenly",textAlign:"center"}}   >
                  <Card style={{backgroundColor:"#195190FF",color:"#A2A2A1FF"}}>
                 <CardContent>
                   <Typography variant="h3">ABOUT</Typography>
@@ -45,9 +49,12 @@ const About=()=>{
                </Card>
                  </div>
         </Grid> 
-      <Grid  container direction="column" justify="center"  alignItems="center">
-        <Grid item xs={12} sm={6}>
-          <motion.div whileHover={{ scale:1.1}} >
+      <Grid  container direction="row" justify="center" alignItems="baseline">
+       
+      <Grid xs={2}>
+        </Grid>
+        <Grid item xs={8} >
+          <motion.div whileHover={{ scale:1.2}} >
             <Card className={classes.root} style={{backgroundColor:'#195190FF',color:"white",marginTop:"2px"}} >
                   <CardContent>
                  <Typography gutterBottom variant="h4" >{info[0].degree}</Typography>
@@ -58,8 +65,12 @@ const About=()=>{
              </Card>
              </motion.div>    
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <motion.div whileHover={{ scale:1.1}} >
+        <Grid xs={2}>
+        </Grid>
+        <Grid xs={2} sm={2}>
+        </Grid>
+        <Grid item xs={8} sm={8} >
+          <motion.div whileHover={{ scale:1.2}} >
             <Card className={classes.root} style={{backgroundColor:'#195190FF',color:"white",marginTop:"2px"}} >
                   <CardContent>
                  <Typography gutterBottom variant="h4" >{info[1].degree}</Typography>
@@ -70,8 +81,12 @@ const About=()=>{
              </Card>
              </motion.div>    
         </Grid>
-        <Grid item xs={12} sm={6}>
-          <motion.div whileHover={{ scale:1.1}} >
+        <Grid xs={2} sm={2}>
+        </Grid>
+        <Grid xs={2}>
+        </Grid>
+        <Grid item xs={8} >
+          <motion.div whileHover={{ scale:1.2}} >
             <Card className={classes.root} style={{backgroundColor:'#195190FF',color:"white",marginTop:"2px"}} >
                   <CardContent>
                  <Typography gutterBottom variant="h4" >{info[2].degree}</Typography>
@@ -81,9 +96,10 @@ const About=()=>{
                   </CardContent>      
              </Card>
              </motion.div>    
-        </Grid> 
-        <Grid item xs={12} sm={6}>
         </Grid>
+        <Grid xs={2}>
+        </Grid>
+       
       </Grid>
       </Grid>
 
