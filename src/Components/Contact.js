@@ -12,7 +12,9 @@ import emailjs from 'emailjs-com';
 import { GiClick} from 'react-icons/gi';
 import { VscLoading} from 'react-icons/vsc';
 import { RiThumbUpFill} from 'react-icons/ri';
+import { motion } from "framer-motion";
 init("user_M0Rn5dc64ZbKm5eyYuZvO");
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -98,13 +100,19 @@ export default function FormPropsTextFields() {
        </Grid>
        <Grid xs={12} sm={5}>
           <div>
-            <Card style={{marginTop:"20px",height:"400px"}}>
-            <img src='https://i.postimg.cc/YSB4WRvV/5887-removebg-preview.png' alt="mail"></img>
+             <Card style={{marginTop:"20px",height:"400px",width:"500px",justifyContent:"center"}}>  
+             <motion.div whileHover={{ scale:1.2}} >
+               <CardContent>
+               <img src='https://i.postimg.cc/63VsCrYy/removal-ai-tmp-60963a52928ae.png' alt="mail" style={{marginLeft:"100px"}}></img>
+               </CardContent>
+            </motion.div>
             </Card>
+            
             {/* <img src="https://maxst.icons8.com/vue-static/landings/animated-icons/icons/mailbox/mailbox.json"></img> */}
-         </div>
-        </Grid>   
+          </div>
+          </Grid>   
         <Grid item xs={12} sm={4} md={3}>
+        <motion.div whileHover={{ scale:1.1}} >
         <Card style={{color:"white",width:"400px",height:"400px",marginLeft:"20px"}}>
         <CardContent>
         <form className={classes.root} noValidate autoComplete="off"> 
@@ -113,7 +121,7 @@ export default function FormPropsTextFields() {
         <TextareaAutosize  style={{width:"35ch",marginLeft:"25px"}} rowsMax={10}  aria-label="maximum height" onChange={(e)=>setForm({...form,message: e.target.value})} placeholder="comments//" rowsMin={5}/>
        </form>
         <ReactiveButton buttonState={state} onClick={onClickHandler}
-         color={'violet'}
+         color={'teal'}
          idleText={<GiClick/>}
          loadingText={<VscLoading/>}
          successText={<RiThumbUpFill/>}
@@ -121,15 +129,17 @@ export default function FormPropsTextFields() {
          type={'button'}
          className={'class1 class2'}
          style={{ borderRadius: '1px',marginLeft:"80px" }}
+         outline={true}
          shadow={true}
          rounded={false}
          size={'normal'}
          animation={true}
-         disabled={((form.message==="")||(form.mail==="")||(form.message===""))}
-      
-/>
+         disabled={((form.message==="")||(form.mail==="")||(form.message===""))}/>
           </CardContent>
               </Card> 
+        </motion.div>
+
+       
         </Grid>
        
        

@@ -9,6 +9,7 @@ import Typography from '@material-ui/core/Typography';
 import {DiNodejs } from "react-icons/di";  
 import {FaGithubAlt } from "react-icons/fa";
 import { AwesomeButton } from "react-awesome-button";
+import { motion } from "framer-motion";
 const projects= [
     {
       name: "Folder And File Reader From Local File",
@@ -58,7 +59,8 @@ const Jshtml=()=>{
       <div >
   
        <div className={classes.dis} >{projects.map((x)=>(
-          <Card className={classes.root}>
+           <motion.div whileHover={{ scale:1.1}} >
+              <Card className={classes.root}>
           <CardActionArea>
             <CardMedia className={classes.media} image={x.img}title="Contemplative Reptile"/>
             <CardContent>
@@ -71,7 +73,10 @@ const Jshtml=()=>{
           <AwesomeButton size="large" type="primary" href={x.front} target="_blank"><Typography variant="h5" ><FaGithubAlt/></Typography></AwesomeButton> 
           {/* <AwesomeButton size="large" type="primary" href={x.dep} target="_blank"><Typography variant="h5" ><GrDeploy/></Typography></AwesomeButton> */}
           </CardActions>
-        </Card>    
+        </Card>
+
+           </motion.div>
+             
       ))}
 
       </div>

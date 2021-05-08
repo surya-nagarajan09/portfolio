@@ -11,6 +11,7 @@ import { IoLogoJavascript } from "react-icons/io";
 import {FaGithubAlt } from "react-icons/fa";
 import {GrDeploy} from "react-icons/gr";
 import { AwesomeButton } from "react-awesome-button";
+import { motion } from "framer-motion";
 
 const projects= [
   {
@@ -72,7 +73,8 @@ const Jshtml=()=>{
     return(
         <div >
          <div className={classes.dis} >{projects.map((x)=>(
-          <Card className={classes.root}>
+            <motion.div whileHover={{ scale:1.1}} >
+               <Card className={classes.root}>
           <CardActionArea>
             <CardMedia className={classes.media} image={x.img}title="project"/>
             <CardContent>
@@ -85,7 +87,10 @@ const Jshtml=()=>{
           <AwesomeButton size="large" type="primary" href={x.dep} target="_blank"><Typography variant="h5" ><FaGithubAlt/></Typography></AwesomeButton> 
           <AwesomeButton size="large" type="primary" href={x.git} target="_blank"><Typography variant="h5" ><GrDeploy/></Typography></AwesomeButton>
           </CardActions>
-        </Card>    
+        </Card> 
+
+            </motion.div>
+            
       ))}
 
       </div>

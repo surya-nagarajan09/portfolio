@@ -10,6 +10,7 @@ import { DiHtml5,DiReact,DiMongodb,DiNodejs,DiHeroku } from "react-icons/di";
 import {GrDeploy} from "react-icons/gr";
 import {FaGithubAlt } from "react-icons/fa";
 import { AwesomeButton } from "react-awesome-button";
+import { motion } from "framer-motion";
 
 const projects=[{
     name:"E-Commerce App",
@@ -40,7 +41,7 @@ const projects=[{
 
 const useStyles = makeStyles({
     root: {
-      maxWidth:350,
+      maxWidth:320,
       borderRadius:"3%",
       margin:"7px",
       backgroundColor:"#195190FF",
@@ -63,7 +64,8 @@ const FullStack=()=>{
     return(
         <div>  
          <div className={classes.dis} >{projects.map((x)=>(
-          <Card className={classes.root}>
+           <motion.div whileHover={{ scale:1.1}} >
+              <Card className={classes.root}>
           <CardActionArea>
             <CardMedia className={classes.media} image={x.img}  title="projects"/>
             <CardContent>
@@ -76,8 +78,9 @@ const FullStack=()=>{
           <AwesomeButton size="large"   href={x.git} target="_blank"><Typography variant="h5" ><FaGithubAlt/></Typography></AwesomeButton> 
           <AwesomeButton size="large"  href={x.dep} target="_blank"><Typography variant="h5" ><GrDeploy/></Typography></AwesomeButton>
           </CardActions>
-
-        </Card>    
+        </Card>   
+           </motion.div>
+          
       ))}
 
       </div>

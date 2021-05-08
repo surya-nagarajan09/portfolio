@@ -1,12 +1,11 @@
-
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid"
-import { Frame, Page } from "framer";
-import CardActions from "@material-ui/core/CardActions"
+import { motion } from "framer-motion";
+
 
 
 const info=[{
@@ -27,100 +26,71 @@ const info=[{
   time:"(2016-2020)",
   dis:"Completed HSC  with 92%"
 }]
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth:400,
-    borderRadius:"3%",
-    marginTop:"30px",
-    marginRight:"15px",
-    backgroundColor:"#195190FF",
-    color:"white"
+    flexGrow: 1,
   },
-  media: {
-    height:200,
-  },
-  dis:{
-      display:"flex",
-      flexWrap:"wrap",
-      color:"white",
-      justifyContent:"center",
-  }
-});
-
+}));
 const About=()=>{
   const classes = useStyles();
   return(
-      <div >  
-            <Grid xs={12} >
-                <div  style={{diplay:"flex",justifyContent:"center",textAlign:"center"}}   >
-              <Card style={{backgroundColor:"#195190FF",color:"#A2A2A1FF"}}>
+    <div>
+      <Grid container spacing={1}>
+      <Grid item xs={12}>
+      <div  style={{diplay:"flex",justifyContent:"center",textAlign:"center"}}   >
+                 <Card style={{backgroundColor:"#195190FF",color:"#A2A2A1FF"}}>
                 <CardContent>
-                  <Typography variant="h3">EDUCATION</Typography>
+                  <Typography variant="h3">ABOUT</Typography>
                 </CardContent>
-              </Card>
-              </div>         
-            </Grid>
-            <Grid xs={12}>
-              <div style={{display:"flex",justifyContent:"center"}}>
-            <Page width={400} height={500} radius={0}>
-            <Frame size={150} radius={0} background={"white"} >
-            <div >   
-             <Card className={classes.root} >
+               </Card>
+                 </div>
+        </Grid> 
+      <Grid  container direction="column" justify="center"  alignItems="center">
+        <Grid item xs={12} sm={6}>
+          <motion.div whileHover={{ scale:1.1}} >
+            <Card className={classes.root} style={{backgroundColor:'#195190FF',color:"white",marginTop:"2px"}} >
                   <CardContent>
-                  <Typography gutterBottom variant="h4" >{info[0].degree}</Typography>
-                     <Typography gutterBottom variant="h5" >{info[0].area}</Typography>
+                 <Typography gutterBottom variant="h4" >{info[0].degree}</Typography>
+                   <Typography gutterBottom variant="h5" >{info[0].area}</Typography>
                    <Typography gutterBottom variant="h5" >{info[0].time}</Typography>
-                  <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{info[0].dis}</Typography>  
-                   
-                 </CardContent>  
-                 <CardActions>
-                   <img src="https://i.postimg.cc/KY9JcDhg/swipe-left.png" alt="swipe Left" style={{width:"40px"}}></img>
-                   <Typography>Swipe Left</Typography>
-                 </CardActions>
-            </Card>    
-          </div>
-            </Frame>
-            <Frame size={150} radius={0} background={"#fff"} >
-            <div >   
-             <Card className={classes.root} >
+                   <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{info[0].dis}</Typography>   
+                  </CardContent>      
+             </Card>
+             </motion.div>    
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <motion.div whileHover={{ scale:1.1}} >
+            <Card className={classes.root} style={{backgroundColor:'#195190FF',color:"white",marginTop:"2px"}} >
                   <CardContent>
-                  <Typography gutterBottom variant="h4" >{info[1].degree}</Typography>
-                     <Typography gutterBottom variant="h5" >{info[1].area}</Typography>
+                 <Typography gutterBottom variant="h4" >{info[1].degree}</Typography>
+                   <Typography gutterBottom variant="h5" >{info[1].area}</Typography>
                    <Typography gutterBottom variant="h5" >{info[1].time}</Typography>
-                  <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{info[1].dis}</Typography>   
-                 </CardContent>  
-                 <CardActions>
-                   <img src="https://i.postimg.cc/KY9JcDhg/swipe-left.png" alt="swipe Left" style={{width:"40px"}}></img>
-                   <Typography>Swipe Left</Typography>
-                 </CardActions>
-            </Card>    
-          </div>
-            </Frame>
-            <Frame size={150} radius={0} background={"#fff"} >
-            <div >   
-             <Card className={classes.root} >
+                   <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{info[1].dis}</Typography>   
+                  </CardContent>      
+             </Card>
+             </motion.div>    
+        </Grid>
+        <Grid item xs={12} sm={6}>
+          <motion.div whileHover={{ scale:1.1}} >
+            <Card className={classes.root} style={{backgroundColor:'#195190FF',color:"white",marginTop:"2px"}} >
                   <CardContent>
-                  <Typography gutterBottom variant="h4" >{info[2].degree}</Typography>
-                     <Typography gutterBottom variant="h5" >{info[2].area}</Typography>
+                 <Typography gutterBottom variant="h4" >{info[2].degree}</Typography>
+                   <Typography gutterBottom variant="h5" >{info[2].area}</Typography>
                    <Typography gutterBottom variant="h5" >{info[2].time}</Typography>
-                  <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{info[2].dis}</Typography>  
-                   
-                 </CardContent>  
-                 <CardActions>
-                   <img src="https://i.postimg.cc/KY9JcDhg/swipe-left.png" alt="swipe Left" style={{width:"40px"}}></img>
-                   <Typography>Swipe Left</Typography>
-                 </CardActions>
-            </Card>    
-          </div>
-            </Frame>  
-              </Page>
-              </div>
-           
-         </Grid>
-     </div>
+                   <Typography variant="body2" color="textPrimary" component="p" style={{color:"white"}}>{info[2].dis}</Typography>   
+                  </CardContent>      
+             </Card>
+             </motion.div>    
+        </Grid> 
+        <Grid item xs={12} sm={6}>
+        </Grid>
+      </Grid>
+      </Grid>
+
+    </div>
+      
   )
 
 }
 
 export default About;
-/**   */

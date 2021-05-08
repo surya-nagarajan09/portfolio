@@ -9,6 +9,8 @@ import Avatar from '@material-ui/core/Avatar';
 import { withStyles } from '@material-ui/core/styles';
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
+import { motion } from "framer-motion";
+
 
 
 
@@ -59,19 +61,23 @@ export default function CenteredGrid() {
          <Grid xs={2}>
         </Grid>  
         <Grid item xs={12} sm={6} md={3}> 
+        <motion.div animate={{ scale: 1.2 }} >
         <div>
-      <StyledBadge  overlap="circle" anchorOrigin={{ vertical: 'bottom', horizontal: 'right', }} variant="dot" >
+        <StyledBadge  overlap="circle" anchorOrigin={{ vertical: 'bottom', horizontal: 'right', }} variant="dot" >
         <Avatar style={{height: '250px',width:"250px",marginTop:"120px",marginLeft:"60px"}} alt="" src="https://i.postimg.cc/tCWDM9zY/IMG-20200727-WA0006.jpg" />
-      </StyledBadge>    
-    </div>     
+        </StyledBadge>    
+        </div>
+        </motion.div>   
         </Grid>
         <Grid item xs={12} sm={6} md={3}> 
-         <div style={{marginTop:"120px",justifyContent:"center",display:"block",padding:"10px",border:"50px",marginLeft:"50px",backgroundImage:"url(https://i.postimg.cc/wMS5KFZ5/watercolour-4117017.png)",backgroundSize:"cover",backgroundPosition:"center",opcatiy:"0.9"}}>   
+        <motion.div animate={{ scale: 1.2 }} >
+        <div style={{marginTop:"120px",justifyContent:"center",display:"block",padding:"10px",border:"50px",marginLeft:"50px",backgroundImage:"url(https://i.postimg.cc/wMS5KFZ5/watercolour-4117017.png)",backgroundSize:"cover",backgroundPosition:"center",opcatiy:"0.9"}}>   
          <Typography variant="h2">Hi!</Typography>
          <Typography variant="h3">I am Surya N</Typography>
         <Typography variant="h4">MERN Stack Developer</Typography> 
-        </div>     
-        <div style={{display:'flex',justifyContent: 'center',width:'100%'}}>
+        </div>    
+        </motion.div> 
+        <div style={{display:'flex',justifyContent: 'center',width:'100%',marginTop:"70px"}}>
         <Button href="https://www.guvi.in/suryanagarajan01" target="_blank"><Typography variant="h4"><img src="https://i.postimg.cc/RFX8GXmn/20210506-131238.png  " width="50" height="50"alt="guvi"></img></Typography></Button>   
         <Button href="https://github.com/surya-nagrajan" target="_blank"><Typography variant="h4"><AiFillGithub/></Typography></Button>   
         <AwesomeButton type="secondary" href="https://drive.google.com/file/d/1cwytyWV1zEu3g2AgO5ScuUC2gteXn5Sa/view?usp=sharing" target="_blank">Resume</AwesomeButton>
