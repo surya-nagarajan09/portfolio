@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 const projects=[{
     name:"E-Commerce App",
-    about:" Here you can buy product ,add to cart and review ,only after one logged in can review the cart",
+    about:" Here you can buy product,add to cart ,only after logging can view the cart and apply coupon",
     git:"https://github.com/surya-nagrajan/commerce",
     dep:"https://react-commerceupdated.herokuapp.com/",
     used:"HTML,CSS,Js,React Js,Express JS,MongoDb,Material-ui",
@@ -22,7 +22,7 @@ const projects=[{
 },
 {
     name:"Ticket Booking App",
-    about:" Here you can watch upcoming movie,select a movie, able to select your seat number",
+    about:" Here you can watch upcoming movie trailer,select a movie, able to select your seat numbe date and time",
     git:"https://github.com/surya-nagrajan/Ticket_Booking",
     dep:"https://moviebookingapplication.herokuapp.com/",
     used:"HTML,CSS,Js,React Js,Express JS,MongoDB,Material-ui",
@@ -30,7 +30,7 @@ const projects=[{
 },
 {
     name:"Bike Service Booking App",
-    about:" Here you can fill the form ,and get serive mail regarding service date and time",
+    about:" Here you can fill the form ,and get sericve mail regarding service date and time",
     git:"https://github.com/surya-nagrajan/bike",
     dep:"https://bookmymech.herokuapp.com/",
     used:"HTML,CSS,Js,React Js,Express JS,MongoDb,Material-ui",

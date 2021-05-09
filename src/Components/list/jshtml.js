@@ -20,7 +20,7 @@ const projects= [
     img: "https://i.ibb.co/x8gtBzw/3.jpg",
     git: "https://agitated-bartik-fb2d64.netlify.app/",
     dep: "https://github.com/surya-nagrajan/Github_clone",
-    about:"A clone of git is done ,here you can search for repos and link"
+    about:"Github Clone ,here you can search for repos and link"
   },
   {
     name: "Currency Converter",
@@ -28,7 +28,7 @@ const projects= [
     img: "https://i.ibb.co/GpPk488/5.jpg",
     dep: "https://github.com/surya-nagrajan/currency-converter",
     git: "https://surya-nagrajan.github.io/currency-converter/",
-    about:"built using api,here u can get daily currency value"
+    about:"Built using api,here u can get daily currency value"
   },
   {
     name: "Series Searcher",
@@ -36,7 +36,7 @@ const projects= [
     img: "https://i.ibb.co/23cRNvD/1.jpg",
     git: "https://xenodochial-leavitt-5e2346.netlify.app/",
     dep: "https://github.com/surya-nagrajan/series-searcher",
-    about:"here you can search for any series,will display all info"
+    about:"Here you can search for any series it will display all info"
 
   },
   {
@@ -45,7 +45,7 @@ const projects= [
     img: "https://i.ibb.co/KKCk5H8/4.jpg",
     git: "https://surya-nagrajan.github.io/pagination/",
     dep: "https://github.com/surya-nagrajan/pagination",
-    about:"list of data is paginated heredfsdfssfdsds"
+    about:"List of data is paginated "
   },
 ];
 
@@ -87,8 +87,7 @@ const Jshtml=()=>{
           <AwesomeButton size="large" type="primary" href={x.dep} target="_blank"><Typography variant="h5" ><FaGithubAlt/></Typography></AwesomeButton> 
           <AwesomeButton size="large" type="primary" href={x.git} target="_blank"><Typography variant="h5" ><GrDeploy/></Typography></AwesomeButton>
           </CardActions>
-        </Card> 
-
+        </Card>
             </motion.div>
             
       ))}

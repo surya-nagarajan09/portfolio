@@ -12,7 +12,7 @@ const info=[{
   degree:"Bachelor of Engineering in Mechanical",
   area:"IFET college of Engineering",
   time:"(2016-2020)",
-  dis:"Completed graduation in Mechanical Engineering from IFET College of Engineering with overall CGPA 7.94"
+  dis:"Completed graduation in Mechanical Engineering  with overall CGPA 7.94"
 },
 {
   degree:"HSC",
@@ -51,7 +51,7 @@ const About=()=>{
       <Grid  container direction="row" justify="center" alignItems="baseline"> 
             <Grid item xs={12} >
           <motion.div whileHover={{ scale:1.01}}  whileTap={{ scale: 0.9 }}>
-            <Card className={classes.root} style={{color:"#195190FF",marginTop:"2px"}} >
+            <Card className={classes.root} style={{color:"#195190FF",marginTop:"2px",textAlign:"justify cd"}} >
                   <CardContent>
                  <Typography gutterBottom variant="h4" >{info[0].degree}</Typography>
                    <Typography gutterBottom variant="h5" >{info[0].area}</Typography>

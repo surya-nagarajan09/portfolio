@@ -100,8 +100,8 @@ export default function FormPropsTextFields() {
        </Grid>
        <Grid xs={12} sm={5}>
           <div>
-             <Card style={{marginTop:"20px",height:"400px",width:"500px",justifyContent:"center",backgroundColor:"lightblue"}}>  
-             <motion.div whileHover={{ scale:1.2}} >
+             <Card style={{marginTop:"20px",height:"400px",width:"450px",justifyContent:"center",backgroundColor:"lightblue"}}>  
+             <motion.div whileHover={{ scale:1.1}}  >
                <CardContent>
                <img src='https://i.postimg.cc/63VsCrYy/removal-ai-tmp-60963a52928ae.png' alt="mail" style={{marginLeft:"100px",backgroundColor:"lightblue"}}></img>
                </CardContent>
@@ -116,8 +116,8 @@ export default function FormPropsTextFields() {
         <Card style={{color:"white",width:"400px",height:"400px",marginLeft:"20px"}}>
         <CardContent>
         <form className={classes.root} noValidate autoComplete="off"> 
-        <TextField  type="text"color="secondary" id="filled-helperText" label="Name" onChange={(e)=>setForm({...form,name: e.target.value})} placeholder="enter name" helperText={alertMessage.name}/>
-        <TextField type='email' id="filled-helperText" color="secondary"label="Mail"onChange={(e)=>setForm({...form,mail: e.target.value})}   placeholder="enter mail" helperText={alertMessage.mail}/>
+        <TextField  type="text"color="primary" id="filled-helperText" label="Name" onChange={(e)=>setForm({...form,name: e.target.value})} placeholder="enter name" helperText={alertMessage.name}/>
+        <TextField type='email' id="filled-helperText" color="primary"label="Mail"onChange={(e)=>setForm({...form,mail: e.target.value})}   placeholder="enter mail" helperText={alertMessage.mail}/>
         <TextareaAutosize  style={{width:"35ch",marginLeft:"25px"}} rowsMax={10}  aria-label="maximum height" onChange={(e)=>setForm({...form,message: e.target.value})} placeholder="comments//" rowsMin={5}/>
        </form>
         <ReactiveButton buttonState={state} onClick={onClickHandler}
