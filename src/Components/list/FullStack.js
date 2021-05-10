@@ -17,7 +17,7 @@ const projects=[{
     about:" Here you can buy product,add to cart ,only after logging can view the cart and apply coupon",
     git:"https://github.com/surya-nagrajan/commerce",
     dep:"https://react-commerceupdated.herokuapp.com/",
-    used:"HTML,CSS,Js,React Js,Express JS,MongoDb,Material-ui",
+    used:"HTML,CSS,Js,React Js,Express JS,MongoDb,Material-Ui",
     img:"https://i.postimg.cc/0yrx8b81/Capture-JPGdsfsdfsfds.jpg"
 },
 {
