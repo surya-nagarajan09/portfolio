@@ -80,7 +80,7 @@ export default function CenteredGrid() {
         <div style={{display:'flex',justifyContent: 'center',width:'100%',marginTop:"70px"}}>
         <Button href="https://www.guvi.in/suryanagarajan01" target="_blank"><Typography variant="h4"><img src="https://i.postimg.cc/RFX8GXmn/20210506-131238.png  " width="50" height="50"alt="guvi"></img></Typography></Button>   
         <Button href="https://github.com/surya-nagrajan" target="_blank"><Typography variant="h4"><AiFillGithub/></Typography></Button>   
-        <AwesomeButton type="secondary" href="https://drive.google.com/file/d/1cwytyWV1zEu3g2AgO5ScuUC2gteXn5Sa/view?usp=sharing" target="_blank">Resume</AwesomeButton>
+        <AwesomeButton type="secondary" href="https://drive.google.com/file/d/12ANxLiLOrhUbbo12EborRcN0pvxDe9a3/view" target="_blank">Resume</AwesomeButton>
         </div>
         <div>
         </div>
