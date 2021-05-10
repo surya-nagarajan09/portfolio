@@ -27,7 +27,6 @@ const Projets=()=>{
     const [state1, setState1] = useState('idle');
     const [state2, setState2] = useState('idle');
 
-
     const onClickHandlerFull = () => {
        setState('loading');
        setTimeout(() => {
@@ -73,9 +72,7 @@ const Projets=()=>{
                 <div >{project}</div>
                 </Grid>             
           </Grid>
-        </div>
-       
-    )
+        </div> )
 
 }
 

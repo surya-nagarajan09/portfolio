@@ -13,6 +13,9 @@ import { GiClick} from 'react-icons/gi';
 import { VscLoading} from 'react-icons/vsc';
 import { RiThumbUpFill} from 'react-icons/ri';
 import { motion } from "framer-motion";
+
+
+
 init("user_M0Rn5dc64ZbKm5eyYuZvO");
 
 
@@ -54,9 +57,6 @@ export default function FormPropsTextFields() {
     to_name:form.mail,
     message:form.message
   }
-  
-  
-
    const onClickHandler = () => {
       setState('loading');
       const {name,mail,message}=form;
@@ -78,8 +78,7 @@ export default function FormPropsTextFields() {
       }, function(error) {
          console.log('FAILED...', error);
          setState("something went wrong")
-         
-      });
+         });
         
      }
     }
@@ -107,8 +106,6 @@ export default function FormPropsTextFields() {
                </CardContent>
             </motion.div>
             </Card>
-            
-            {/* <img src="https://maxst.icons8.com/vue-static/landings/animated-icons/icons/mailbox/mailbox.json"></img> */}
           </div>
           </Grid>   
         <Grid item xs={12} sm={4} md={3}>
@@ -136,17 +133,8 @@ export default function FormPropsTextFields() {
           </CardContent>
               </Card> 
         </motion.div>
-
-       
         </Grid>
-       
-       
-        </Grid>
-     
-
-    </div>
-    
-  );
-}
+   </Grid></div>)
+   }
 
 

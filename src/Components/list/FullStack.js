@@ -80,13 +80,10 @@ const FullStack=()=>{
           </CardActions>
         </Card>   
            </motion.div>
-          
-      ))}
-
+    ))}
       </div>
-        </div>
+   </div>
     )
-
-}
+  }
 
 export default FullStack;

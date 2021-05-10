@@ -75,7 +75,7 @@ const Jshtml=()=>{
          <div className={classes.dis} >{projects.map((x)=>(
             <motion.div whileHover={{ scale:1.1}} >
                <Card className={classes.root}>
-          <CardActionArea>
+           <CardActionArea>
             <CardMedia className={classes.media} image={x.img}title="project"/>
             <CardContent>
               <Typography gutterBottom variant="h5" >{x.name}</Typography>
@@ -89,15 +89,10 @@ const Jshtml=()=>{
           </CardActions>
         </Card>
             </motion.div>
-            
-      ))}
-
-      </div>
-      
-
-        </div>
+   ))}
+     </div>
+  </div>
     )
-
 }
 
 export default Jshtml;

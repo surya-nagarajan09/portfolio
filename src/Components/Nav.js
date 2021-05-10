@@ -66,13 +66,10 @@ const Nav=()=> {
       <BottomNavigationAction label="Contact Me" value="Contact Me"style={{color:"#195190FF"}} icon={<ContactMailIcon/>} onClick={()=>setPage(<Contact/>)} />
       </BottomNavigation>
       </Toolbar>
-      </div>
-      
+      </div>  
     </Grid>
     </Grid>
     </div>
   );
 }
-
-
 export default Nav;

@@ -39,10 +39,9 @@ const StyledBadge = withStyles((theme) => ({
       },
     },
   }))(Badge);
-  
 
 
-const gridStyles = makeStyles((theme) => ({
+  const gridStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     display:"flex",
@@ -53,8 +52,6 @@ const gridStyles = makeStyles((theme) => ({
 
 export default function CenteredGrid() {
   const grid = gridStyles();
-
-
   return (
     <div className={grid.root}>
       <Grid container spacing={1}> 

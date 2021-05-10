@@ -87,11 +87,6 @@ const About=()=>{
         </Grid>
       </Grid>
       </Grid>
-
-    </div>
-      
-  )
-
-}
+ </div>)}
 
 export default About;

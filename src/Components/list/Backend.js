@@ -74,17 +74,11 @@ const Jshtml=()=>{
           {/* <AwesomeButton size="large" type="primary" href={x.dep} target="_blank"><Typography variant="h5" ><GrDeploy/></Typography></AwesomeButton> */}
           </CardActions>
         </Card>
-
-           </motion.div>
-             
+     </motion.div>          
       ))}
-
       </div>
-      
-
-        </div>
+  </div>
     )
-
 }
 
 export default Jshtml;
