@@ -63,7 +63,7 @@ const Projets=()=>{
                 </Grid>
                 <Grid xs={12}>
                    <div style={{display:'flex',justifyContent:'center',margin:"10px"}}>    
-                   <ReactiveButton buttonState={state} onClick={onClickHandlerFull} color={"dark"} idleText={"FullStack"} loadingText={<React.Fragment><FaHammer/></React.Fragment>} successText={<React.Fragment><DiCodeBadge/></React.Fragment>}size={"large"} shadow={true} messageDuration={600}/>
+                   <ReactiveButton buttonState={state} onClick={onClickHandlerFull} color={"dark"} idleText={"MERN STACK"} loadingText={<React.Fragment><FaHammer/></React.Fragment>} successText={<React.Fragment><DiCodeBadge/></React.Fragment>}size={"large"} shadow={true} messageDuration={600}/>
                    <ReactiveButton buttonState={state1} onClick={onClickHandlerjs} color={"dark"} idleText={"HTML,CSS,JS"} loadingText={<React.Fragment><FaHammer/></React.Fragment>} successText={<React.Fragment><DiCodeBadge/></React.Fragment>}size={"large"}shadow={true}messageDuration={600}/>
                    <ReactiveButton buttonState={state2} onClick={onClickHandlernode} color={"dark"} idleText={"Node JS"} loadingText={<React.Fragment><FaHammer/></React.Fragment>} successText={<React.Fragment><DiCodeBadge/></React.Fragment>}size={"large"}shadow={true}messageDuration={600}/>               
                   </div>
